@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Primary Meta Tags -->
+<title>
+    Crypto Predict
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Pixel - Free Bootstrap 5 UI Kit">
+<meta name="author" content="Themesberg">
+
+
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="120x120" href="{{ ASSETS_ROOT }}/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ ASSETS_ROOT }}/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ ASSETS_ROOT }}/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="{{ ASSETS_ROOT }}/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="{{ ASSETS_ROOT }}/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Fontawesome -->
+<link type="text/css" href="{{ ASSETS_ROOT }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+<!-- Pixel CSS -->
+<link type="text/css" href="{{ ASSETS_ROOT }}/css/pixel.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    {% include 'includes/navigation.html' %}
+
+    <main>
+
+        {% include 'includes/preloader.html' %}
+
+        <!-- Hero -->
+        <section class="section-header overflow-hidden pt-7 pt-lg-8 pb-9 pb-lg-12 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="bootstrap-big-icon d-none d-lg-block">
+                            <a><img src="{{ ASSETS_ROOT }}/img/candlestick" width="700" height="622" class="d-block my-1"
+                                >
+                                <title>candlestick</title></a>
+
+
+                        </div>
+                        <h1 class="fw-bolder display-2">
+                            Crypto Predict
+                        <h2 class="lead fw-normal text-muted mb-4 px-lg-10">
+                            An Online Daily Cryptocurrency Prediction Tool
+                        </h2>
+                        <!-- Button Modal -->
+                        <div class="d-flex justify-content-center align-items-center mb-5">
+                            <a href="#components" class="btn btn-tertiary mb-3 mt-2 me-2 me-md-3 animate-up-2"><span
+                                    class="fas fa-th-large me-2"></span> <span class="d-none d-md-inline">Explore
+                                    Cryptocurrency prices</span> <span class="d-md-none">Cryptocurrency Prices</span></a>
+                        </div>
+                        <div class="d-flex justify-content-center flex-column mb-6 mb-lg-5">
+
+                                <span class="text-muted font-small">
+                                    &copy; Cryptocurrency Predict - coded by Ameer Adeigbe & Olushesi Hafsat
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"><svg class="fill-white"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+                    <path d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+                </svg></figure>
+        </section>
+
+        <div class="section py-0">
+            <div class="container mt-n10 mt-lg-n12 z-2">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10"><img src="{{ ASSETS_ROOT }}/img/presentation-mockup.png"
+                            alt="Pixel Free Mockup"></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section section-lg">
+            <div class="container" id="components">
+                <div class="row justify-content-center mb-5 mb-lg-6">
+                    <div class="col-6 col-md-3 text-center mb-4">
+                        <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
+                            <span class="fab fa-btc  text-tertiary"></span>
+                        </div>
+                        <h3 class="fw-bolder">Live Daily Closing Prices</h3>
+                        </div>
+                    <div class="col-6 col-md-3 text-center mb-4">
+                        <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
+                            <span class="fa fa-exclamation-circle  text-tertiary"></span>
+                        </div>
+                        <h3 class="fw-bolder">Low Trading Risk</h3>
+                        </div>
+                    <div class="col-6 col-md-3 text-center mb-4">
+                        <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
+                            <span class="fa fa-percent  text-tertiary"></span>
+                        </div>
+                        <h3 class="fw-bolder">More Profit</h3>
+                        </div>
+                </div>
+                <div class="row justify-content-between align-items-center mb-5 mb-lg-7">
+                    <div class="col-12 col-lg-5 mb-5 mb-lg-0 order-lg-2">
+                        <h2 class="h1">Bitcoin (BTC)</h2>
+                        <p class="mb-4 lead fw-bold">{% now "SHORT_DATETIME_FORMAT" %}</p>
+                        <p class="mb-4">Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.<br></p>
+                        <a href="https://docs.appseed.us/products/django-apps/pixel-lite" target="_blank"
+                            class="btn btn-primary mt-2 animate-up-2"><span class="fas fa-chart-line me-2"></span>Today's predicted closing price: $20,101</a>
+                    </div>
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <img src="{{ ASSETS_ROOT }}/img/illustrations/bitcoin.png" alt="Front pages overview">
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center mb-5 mb-lg-7">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h2 class="h1 d-flex align-items-center">Ethereum (ETHER, ETH)
+                        </h2>
+                        <p class="mb-4 lead fw-bold">{% now "SHORT_DATETIME_FORMAT" %}</p>
+                        <p class="mb-4">Ethereum itself is a blockchain technology platform that supports a wide range of decentralized applications (dApps), including cryptocurrencies. The ETH coin is commonly called Ethereum, although the distinction remains that Ethereum is a blockchain-powered platform, and ether is its cryptocurrency.</p>
+                        <a href="https://appseed.us/django/django-pixel-uikit-pro"
+                            target="_blank" class="btn btn-primary mt-2 animate-up-2">
+                            <span class="fas fa-chart-line me-2"></span>
+                            Today's predicted closing price: $1,332
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{{ ASSETS_ROOT }}/img/illustrations/ethereum.png" alt="MapBox Leaflet.js Custom Integration Mockup">
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-5 order-lg-2 mb-5 mb-lg-0">
+                        <h2 class="h1 d-flex align-items-center">Binance Coin (BNB)</h2>
+                        <p class="mb-4 lead fw-bold">{% now "SHORT_DATETIME_FORMAT" %}</p>
+                        <p class="mb-4">BNB is the cryptocurrency coin that powers the BNB Chain ecosystem. As one of the world's most popular utility tokens, not only can you trade BNB like any other cryptocurrency, you can also use BNB in a wide range of applications and use cases.</p>
+                        <a href="https://jinja-pixel-pro.appseed-srv1.com/dashboard-account.html" target="_blank"
+                            class="btn btn-primary mt-2 animate-up-2"><span class="fas fa-chart-line me-2"></span> Today's predicted closing price: $292</a>
+                    </div>
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <img src="{{ ASSETS_ROOT }}/img/illustrations/binance.png" alt="Dashboard Preview">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+                    <div class="col-12 mt-5">
+                        <div class="card shadow mb-6">
+                            <div class="card-body px-5 py-5 text-center text-md-left">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <h2 class="mb-3">Get in touch</h2>
+                                        <p class="mb-0">
+                                            If you need any help with our products or services, choose one of the following ways
+                                            to contact us.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                                        <a href="#" class="btn btn-primary">
+                                            <span class="me-1">
+                                                <span class="fas fa-headphones"></span>
+                                            </span>
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+<coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,binancecoin" currency="usd" background-color="#1c2540" locale="en" font-color="#ffffff"></coingecko-coin-price-marquee-widget>
+        </section>
+
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+    {% include 'includes/scripts.html' %}
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Contact {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main>
+        
+        {% include 'includes/preloader.html' %}
+
+        <!-- Hero -->
+        <section class="section section-header pb-11 bg-primary text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-8 text-center">
+                        <h1 class="display-2 mb-3">Get in touch today</h1>
+                        <p class="lead">Have an idea you'll like to share with us regarding this project?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <div class="section py-0">
+            <div class="container mt-n10">
+                <div class="row">
+                    <div class="col-12">
+                        <iframe class="map rounded" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15836.229311057434!2d3.3191467!3d7.1193553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x280b2e4857e445e3!2sHarvarde%20College%20of%20Science%20Business%20and%20Management%20Studies!5e0!3m2!1sen!2sng!4v1665151884912!5m2!1sen!2sng""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section -->
+        <section class="section section-lg pt-6">
+            <div class="container">
+                <div class="row justify-content-center mb-5 mb-lg-6">
+                    <div class="col-12 col-lg-8">
+                        <!-- Contact Card -->
+                        <div class="card border-0 p-2 p-md-3 p-lg-5">
+                            <div class="card-header bg-white border-0 text-center">
+                                <h2>Want to work with us?</h2>
+                                <p>Cool! Let’s talk about your idea</p>
+                            </div>
+                            <div class="card-body px-0 pt-0">
+                                <form action="#">
+                                    <!-- Form -->
+                                    <div class="mb-4">
+                                        <label for="name">Your Name</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon3"><span class="fas fa-user-circle"></span></span>
+                                            <input type="text" class="form-control" placeholder="e.g. Olushesi Adeigbe" id="name" required>
+                                        </div>
+                                    </div>
+                                    <!-- End of Form -->
+                                    <!-- Form -->
+                                    <div class="mb-4">
+                                        <label for="email">Your Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon4"><span class="fas fa-envelope"></span></span>
+                                            <input type="email" class="form-control" placeholder="example@company.com" id="email" required>
+                                        </div>
+                                    </div>
+                                    <!-- End of Form -->
+                                    <div class="mb-4">
+                                        <label for="message">Your Message</label>
+                                        <textarea placeholder="Your message" class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <!-- End of Form -->
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn rounded btn-secondary">Send message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End of Contact Card -->
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- End of section -->
+
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
